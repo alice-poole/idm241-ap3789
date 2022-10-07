@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice Does Games</title>
+  <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="whole">
+    <h1 class="header">
+        IDM241 Alpha Description
+    </h1>
+    <hr>
+    <p>
+        Pinterest is one of my favorite websites. But its posts are a pain point for me every day. <br>
+        First, let's take a look at the current microinteraction of <a href="https://www.pinterest.com/search/pins/?q=hedge%20witch%20art&rs=typed" target="_blank">hovering on a post here</a>. (Posts are the main content blocks of a page.)
+    </p>
+    <br>
+    <h2 class="header">
+        Current Design
+    </h2>
+    <h3>Hover On</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover on a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Post darkens slightly.
+                </li>
+                <li>
+                    Save button appears.
+                </li>
+                <li>
+                    Predicted list dropdown appears.
+                </li>
+                <li>
+                    Original post link button appears.
+                </li>
+                <li>
+                    Share button appears.
+                </li>
+                <li>
+                    More options button appears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Post darkens slightly.
+                </li>
+                <li>
+                    Save button appears.
+                </li>
+                <li>
+                    Predicted list dropdown appears.
+                </li>
+                <li>
+                    Original post link button appears.
+                </li>
+                <li>
+                    Share button appears.
+                </li>
+                <li>
+                    More options button appears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button appears.
+                </li>
+                <li>
+                    Predicted list dropdown appears.
+                </li>
+                <li>
+                    Original post link button appears.
+                </li>
+                <li>
+                    Share button appears.
+                </li>
+                <li>
+                    More options button appears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="../img/before/before1.png" alt="A Pinterest post in its default state." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/before/before2.png" alt="A Pinterest post in its hover state." />
+        </div>
+    </div>
+    <p>(The content of this <a href="https://www.pinterest.com/pin/353180795790833412/?nic_v3=1a6phVgEo" target="_blank">example post</a> belongs to its respective owner via Pinterest.)</p>
+    <br><br>
+    <h3>Hover Off</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover off a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Post lighting resets.
+                </li>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Predicted list dropdown disappears.
+                </li>
+                <li>
+                    Original post link button disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Post lighting resets.
+                </li>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Predicted list dropdown disappears.
+                </li>
+                <li>
+                    Original post link button disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Predicted list dropdown disappears.
+                </li>
+                <li>
+                    Original post link button disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="../img/before/before2.png" alt="A Pinterest post in its hover state." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/before/before1.png" alt="A Pinterest post in its default state." />
+        </div>
+    </div>
+    <br>
+    <h2 class="header">
+        Problems
+    </h2>
+    <ol>
+        <li>
+            Tint obscures image content - the focus of the website!
+        </li>
+        <li>
+            Instant transition is boring for a site about art & expression.
+        </li>
+    </ol>
+    <br>
+    <hr>
+    <h2>
+        Proposed Design
+    </h2>
+    <h3>Hover On</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover on a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Save button slides down from top by 16px then back 4px.
+                </li>
+                <li>
+                    Original post link slides up from bottom by 16px then back 4px.
+                </li>
+                <li>
+                    Share button slides up from bottom by 16px then back 4px.
+                </li>
+                <li>
+                    More options slides up from bottom by 16px then back 4px.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Save button slides down from top by 16px then back 4px.
+                </li>
+                <li>
+                    Original post link slides up from bottom by 16px then back 4px.
+                </li>
+                <li>
+                    Share button slides up from bottom by 16px then back 4px.
+                </li>
+                <li>
+                    More options slides up from bottom by 16px then back 4px.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button appears.
+                </li>
+                <li>
+                    Original post link button appears.
+                </li>
+                <li>
+                    Share button appears.
+                </li>
+                <li>
+                    More options button appears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="../img/before/before1.png" alt="A Pinterest post in its default state." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/after/after1.png" alt="The buttons begin to slide in from vertical edges." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/after/after2.png" alt="The buttons continue to slide in." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/after/after3.png" alt="The buttons enter their final state." />
+        </div>
+    </div>
+    <br>
+    <h3>Hover Off</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover off a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Save button slides up out of view.
+                </li>
+                <li>
+                    Original post link slides down out of view.
+                </li>
+                <li>
+                    Share button slides down out of view.
+                </li>
+                <li>
+                    More options button slides down out of view.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Save button slides up out of view.
+                </li>
+                <li>
+                    Original post link slides down out of view.
+                </li>
+                <li>
+                    Share button slides down out of view.
+                </li>
+                <li>
+                    More options button slides down out of view.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Original post link button disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="../img/after/after3.png" alt="A Pinterest post in its proposed hover state." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/after/after1.png" alt="A Pinterest post as the user leaves the hover." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="../img/before/before1.png" alt="A Pinterest post in its default state." />
+        </div>
+    </div>
+    <h2 class="header">
+        Advantages
+    </h2>
+    <ol>
+        <li>
+            Image content stays bright and clear with less clutter.
+        </li>
+        <li>
+            Unified style and animation of UI elements offer tighter design language.
+        </li>
+        <li>
+            Restricting text to buttons improves visual contrast for accessible text.
+        </li>
+        <li>
+            Lively feedback draws attention to post saving and sharing functionalities.
+        </li>
+    </ol>
+<!--FOOTER: Copyright Alice Poole 2022.-->
+    <section class="footer">
+        <p class="footer__text">Pinterest content used for educational purposes. <br><br>&copy; Alice Poole 2022</p>
+    </section>
+</main>
+</body>
+</html>

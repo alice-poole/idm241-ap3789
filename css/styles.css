@@ -1,3 +1,5 @@
+/*This stylesheet recycles styles from a now outdated portfolio site design, not all of which are used here.*/
+
 /*Styles*/
 * {
         border: none;
@@ -9,6 +11,8 @@
       }
 
 a {
+        color: var(--color-gold);
+        
         text-decoration: none;
       }
 
