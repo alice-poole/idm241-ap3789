@@ -1,5 +1,96 @@
 /*This stylesheet recycles styles from a now outdated portfolio site design, not all of which are used here.*/
+@keyframes bumpDown {
+        0%   {transform: translateY(-12px); opacity: 0;}
+        60%  {transform: translateY(21px); opacity: 1;}
+        100% {transform: translateY(12px);}
+      }
+@keyframes bumpUp {
+  0%  {transform: translateY(12px); opacity: 0;}
+  60% {transform: translateY(-21px); opacity: 1;}
+  100%  {transform: translateY(-12px);}
+}
+@keyframes jiggle {
+  0%  {transform: rotate(0deg) translateY(12px);}
+  5% {transform: rotate(5deg) translateY(12px);}
+  15% {transform: rotate(-5deg) translateY(12px);}
+  20% {transform: rotate(0deg) translateY(12px);}
+  100% {transform: rotate(0deg) translateY(12px);}
+}
+.container:hover {
+        cursor:zoom-in;
 
+}
+.container:not(:hover) {
+        cursor: default;
+}
+.container:hover > .top {
+
+  opacity: 1;
+  animation: bumpDown ease-in .25s forwards, jiggle ease-in 1s infinite;
+  animation-delay:  0s, .75s;
+}
+.container:hover > .bottom {
+  animation: bumpUp ease-in .25s forwards;
+  opacity: 1;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiny {
+        font-size: 14px;
+        font-weight: bold;
+}
+.container {
+  position: relative;
+  margin: 0px;
+  background-image: url("../img/before/before1.png");
+  width: 236px;
+  height: 341px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.save {
+  right: 12px;
+  background: #e60023;
+  color: #ffffff;
+  width: 66px;
+  height: 48px;
+}
+.bottom {
+  background: #ffffff;
+  color: #000000;
+  bottom: 6px;
+}
+.link {
+  left: 12px;
+  width: 100px;
+  height: 32px;
+}
+.share {
+  width: 32px;
+  height: 32px;
+  right: 56px;
+}
+.more {
+  right: 12px;
+  width: 32px;
+  height: 32px;
+}
+.overlay {
+  z-index: 9;
+  border-radius: 30px;
+  opacity: 0;
+
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
 /*Styles*/
 * {
         border: none;

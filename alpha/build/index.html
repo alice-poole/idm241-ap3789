@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice Does Games</title>
+  <link href="../../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+
+<body class="whole">
+    <h1 class="header">
+        IDM241 Alpha Description
+    </h1>
+    <hr>
+    <p>
+        I hate Pinterest's post microinteractions. Last time, I talked about why I don't like them and my plan to improve them. <a href="../index.html" target="_blank">(See part 1 here!)</a><br>
+        Now, I improved them! Here is a working version of my new design. (Look how far she's come!)
+    </p>
+    <br>
+    <h2 class="header">
+        Current Design
+    </h2>
+    <div class="container">
+        <button class="box overlay save top"><p class="tiny">Save</p></button>
+        <button class="box overlay link bottom"><p class="tiny">&#129125 reddit.com</p></button>
+        <button class="box overlay share bottom"><p class="tiny">&#8613</p></button>
+        <button class="box overlay more bottom"><p class="tiny">&#8943</p></button>
+    </div>
+    <br>
+    <h3>Hover On</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover on a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Save button appears, slides down from top by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    After .75 seconds, save button wiggles back and forth by 5 degrees on a 1 second loop.
+                </li>
+                <li>
+                    Original post link appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    Share button appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    More options appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor changes to magnifying glass.
+                </li>
+                <li>
+                    Save button appears, slides down from top by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    After .75 seconds, save button wiggles back and forth by 5 degrees on a 1 second loop.
+                </li>
+                <li>
+                    Original post link appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    Share button appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+                <li>
+                    More options appears, slides up from bottom by 21px then back 9px over .25 seconds.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    After .75 seconds, save button wiggles back and forth by 5 degrees on a 1 second loop.
+                </li>
+            </ul>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button appears.
+                </li>
+                <li>
+                    Original post link button appears.
+                </li>
+                <li>
+                    Share button appears.
+                </li>
+                <li>
+                    More options button appears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h3>Hover Off</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover off a post.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Original post link disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor reverts to arrow.
+                </li>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Original post link disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <br>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    Save button disappears.
+                </li>
+                <li>
+                    Original post link disappears.
+                </li>
+                <li>
+                    Share button disappears.
+                </li>
+                <li>
+                    More options button disappears.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2 class="header">
+        Lessons Learned
+    </h2>
+    <ul>
+        <li>
+            Complex hover off animations are more trouble than they're worth. Focus on rewarding users for engagement, not disengagement.
+        </li>
+        <li>
+            CodePen is a great tool for coding in a vacuum. I can't promise I won't break everything, but I CAN break a different, smaller everything!
+        </li>
+        <li>
+            Busy wiggle animations are great to draw users' attention and curiosity!
+        </li>
+        <li>
+            Buttons clutter the visually-important posts. To keep things clear, distracting animations can pressure users to engage or make them go away by exiting. Posts clear!
+        </li>
+    </ul>
+<!--FOOTER: Copyright Alice Poole 2022.-->
+    <section class="footer">
+        <p class="footer__text">Pinterest content used for educational purposes. <br><br>&copy; Alice Poole 2022</p>
+    </section>
+</main>
+</body>
+</html>
