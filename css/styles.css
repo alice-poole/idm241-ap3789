@@ -38,7 +38,7 @@
 
 
 button {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
@@ -57,13 +57,13 @@ button {
         margin: 1rem;
       }
       
- button:hover{
+.button:hover{
         box-shadow: 0px 8px var(--medium);
         transform: translateY(8px);
         transition: 300ms;
       }
       
-button:not(:hover){
+.button:not(:hover){
                 box-shadow: 0px 16px var(--medium);
           transform: translateY(0px);
           transition: 300ms;
@@ -71,13 +71,13 @@ button:not(:hover){
       
 .springy:active{
         transform: translateY(16px);
-        box-shadow: 0px 0px var(--medium);
+              box-shadow: 0px 0px var(--medium);
         transition: 300ms;
       }
       
-.pressed {
+.button.pressed {
         transform: translateY(16px);
-        box-shadow: 0px 0px var(--medium);
+              box-shadow: 0px 0px var(--medium);
         transition: 300ms;
       }
       
