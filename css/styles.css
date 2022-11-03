@@ -1,4 +1,6 @@
 /*This stylesheet recycles styles from a now outdated portfolio site design, not all of which are used here.*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 @keyframes bumpDown {
         0%   {transform: translateY(-12px); opacity: 0;}
         60%  {transform: translateY(21px); opacity: 1;}
@@ -33,11 +35,52 @@
   animation: bumpUp ease-in .25s forwards;
   opacity: 1;
 }
+
+
 button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
+
+.button {
+        background-color: var(--light);
+          border-radius: 2rem;
+        border: 0;
+        color: --dark;
+        cursor: pointer;
+        font-family: 'Open Sans', 'sans-serif';
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+        position: relative;
+        margin: 1rem;
+      }
+      
+ button:hover{
+        box-shadow: 0px 8px var(--medium);
+        transform: translateY(8px);
+        transition: 300ms;
+      }
+      
+button:not(:hover){
+                box-shadow: 0px 16px var(--medium);
+          transform: translateY(0px);
+          transition: 300ms;
+      }
+      
+.springy:active{
+        transform: translateY(16px);
+        box-shadow: 0px 0px var(--medium);
+        transition: 300ms;
+      }
+      
+.pressed {
+        transform: translateY(16px);
+        box-shadow: 0px 0px var(--medium);
+        transition: 300ms;
+      }
+      
 .tiny {
         font-size: 14px;
         font-weight: bold;
@@ -243,6 +286,9 @@ hr {
       --color-gold:  #ff9a01;
       --color-pink:  #fd1d51;
       --color-white: #fafafa;
+      --light: OldLace;
+      --medium: Gray;
+      --dark: Black;
       }
 
 .showcase {
