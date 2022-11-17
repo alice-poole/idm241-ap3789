@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice Does Games</title>
+  <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body class="whole">
+    <h1 class="header">
+        IDM241 Final Description
+    </h1>
+    <hr>
+    <h3>Hover On</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover on a button.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor changes to pointer.
+                </li>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor changes to pointer.
+                </li>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="img/new-normal.png" alt="A minimalist three-dimensional button with rounded edges and a gray side, emerging from the page." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-hover.png" alt="Hovering over the button causes it to compress as if partially pressed into the page." />
+        </div>
+    </div>
+    <br>
+    <h3>Hover Off</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Hover off a button.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Cursor changes to default arrow.
+                </li>
+                <li>
+                    Over 200ms, the white button top will move up by .25rem.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Cursor changes to default arrow.
+                </li>
+                <li>
+                    Over 200ms, the white button top will move up by .25rem.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+            <img class="preview" src="img/new-hover.png" alt="Hovering over the button causes it to compress as if partially pressed into the page." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-normal.png" alt="A minimalist three-dimensional button with rounded edges and a gray side, emerging from the page." />
+        </div>
+    </div>
+    <br>
+    <h3>Default Select On Page Load</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Load the page.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Select the first button with the "default" tag. See <a href=#Option Selected>"Option Selected"</a> below. This brings additional rules and feedback.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem, fully obscuring the gray button side.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunksflex">
+       <div class="chunkflex">
+            <img class="preview" src="img/PageLoad.jpg" alt="The red button is fully pressed into the page." />
+        </div>
+    </div>
+    <br>
+    <hr>
+    </div>
+    <h3>Click Springy Next Button</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Click on the springy next button.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem, fully obscuring the gray button side.
+                </li>
+                <li>
+                    Select the option button to the immediate right of the current selected button. See <a href=#Option Selected>"Option Selected"</a> below. This brings additional rules and feedback.
+                    <ul>
+                        <li>
+                            (This wraps around. If the rightmost option button is already selected, instead, select the leftmost option.)
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Then, over another 200ms, the white button top will move up by .25rem, returning to the hover position.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem, fully obscuring the gray button side.
+                </li>
+                <li>
+                    Then, over another 200ms, the white button top will move up by .25rem, returning to the hover position. 
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunksflex">
+        <div class="chunkflex">
+             <img class="preview" src="img/Switch1.jpg" alt="The red button is fully pressed. The yellow button is indented." />
+         </div>
+         <div class="chunkflex">
+            <img class="preview" src="img/Switch2.jpg" alt="The red button is indented. The yellow button is fully pressed." />
+        </div>
+        <div class="chunkflex">
+            <img class="preview" src="img/Switch3.jpg" alt="The red button is fully reset. The yellow button is fully pressed." />
+        </div>
+     </div>
+    <br>
+    <h3>Click Sticky Option Button</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    Click on a sticky option button.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem, fully obscuring the gray button side.
+                </li>
+                <li>
+                    Select the clicked button. See <a href=#Option Selected>"Option Selected"</a> below. This brings additional rules and feedback.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Over 200ms, the white button top will move down by .25rem, fully obscuring the gray button side.
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-hover.png" alt="The button is partially pressed into the page." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-clicked.png" alt="Clicking the button turns it into a fully flat button in the page." />
+        </div>
+    </div>
+    <br>
+    <h3>Option Selected</h3>
+    <div class="chunks">
+        <div class="chunk">
+            <h3>Trigger</h3>
+            <ul>
+                <li>
+                    An option is selected, which can occur through the following means:
+                    <ul>
+                        <li>
+                            A default option is selected on page load.
+                        </li>
+                        <li>
+                            The next button is clicked, toggling the selection one to the right.
+                        </li>
+                        <li>
+                            An option button is clicked directly.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Rules</h3>
+            <ul>
+                <li>
+                    Over 200ms, the screen background color will fade transition to a hidden color attached to the newly selected option button.
+                </li>
+                <li>
+                    Over 200ms, excluding the newly selected button, all sticky buttons' white button tops will move to .5rem above their gray button side. (Any previously selected sticky button resets to the default unpressed position.)
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Feedback</h3>
+            <ul>
+                <li>
+                    Over 200ms, the screen background color will fade transition to a hidden color attached to the newly selected option button.
+                </li>
+                <li>
+                    Over 200ms, excluding the newly selected button, all sticky buttons' white button tops will move to .5rem above their gray button side. (Any previously selected sticky button resets to the default unpressed position.)
+                </li>
+            </ul>
+        </div>
+        <div class="chunk">
+            <h3>Loops</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>
+                    None.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chunks">
+        <div class="chunk">
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-hover.png" alt="The button is partially pressed into the page." />
+        </div>
+        <div class="chunk">
+            <img class="preview" src="img/new-clicked.png" alt="Clicking the button turns it into a fully flat button in the page." />
+        </div>
+    </div>
+    <br>
+<!--FOOTER: Copyright Alice Poole 2022.-->
+    <section class="footer">
+        <p class="footer__text">&copy; Alice Poole 2022</p>
+    </section>
+</main>
+</body>
+</html>

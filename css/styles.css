@@ -532,6 +532,19 @@ hr {
         margin: 8px;
         grid-column: span 4;
 }
+.chunkflex {
+        margin: 16px;
+        max-width: 720px;
+        min-width: 360px;
+}
+
+.chunksflex {
+        justify-content: center;
+        display: flex;
+        margin: 16px auto;
+        align-content: space-between;
+        flex-flow: row wrap;
+}
 
 .chunks {
         display: grid;
