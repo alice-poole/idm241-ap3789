@@ -146,7 +146,7 @@ button {
 
 a {
         color: var(--color-link);
-        
+        font-weight: bold;
         text-decoration: none;
       }
 
@@ -186,7 +186,7 @@ li {
 hr {
         height: 2px;
         width: 10%;
-        background-color: var(--color-gold);
+        background-color: var(--color-black);
         margin: 2rem 0;
 }
 
@@ -196,6 +196,7 @@ hr {
 
 .blue {
         background-color: var(--color-blue);
+        transition: 300ms;
       }
 
 .content {
@@ -228,6 +229,7 @@ hr {
 
 .gold {
         background-color: var(--color-gold);
+        transition: 300ms;
       }
 
 
@@ -263,6 +265,7 @@ hr {
 
 .pink {
         background-color: var(--color-pink);
+        transition: 300ms;
       }
 
 .pins {
@@ -286,7 +289,7 @@ hr {
       --color-gold:  #FEFACD;
       --color-pink:  #FFB6C1;
       --color-white: #fafafa;
-      --color-link: #183574;
+      --color-link: #0c4ad1;
       --light: OldLace;
       --medium: Gray;
       --dark: Black;
@@ -520,7 +523,6 @@ hr {
 
 .body {
         margin: 16px;
-        background-color: var(--color-white);
         overflow: hidden;
         align-items: center;
 }
@@ -563,7 +565,6 @@ hr {
 .whole {
         margin: 32px;
         color: var(--color-black);
-        background-color: var(--color-white);
         align-items: center;
         display: flex;
         flex-flow: column;
