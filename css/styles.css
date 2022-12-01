@@ -145,7 +145,7 @@ button {
       }
 
 a {
-        color: var(--color-gold);
+        color: var(--color-link);
         
         text-decoration: none;
       }
@@ -282,10 +282,11 @@ hr {
       /*Colors*/
 :root {
       --color-black: #303030;
-      --color-blue:  #285dcf;
-      --color-gold:  #ff9a01;
-      --color-pink:  #fd1d51;
+      --color-blue:  #B0DFE5;
+      --color-gold:  #FEFACD;
+      --color-pink:  #FFB6C1;
       --color-white: #fafafa;
+      --color-link: #183574;
       --light: OldLace;
       --medium: Gray;
       --dark: Black;
@@ -499,13 +500,13 @@ hr {
         .pins__pin {
                 filter: drop-shadow(0px 0px 1px var(--color-black));
         }
-        :root {
+        /*:root {
                 --color-black: #fafafa;
                 --color-blue:  #183574;
                 --color-gold:  #ffa620;
                 --color-pink:  #991634;
                 --color-white: #303030;
-        }
+        }*/
         .showcase__button {
           color: var(--color-black);
         }
