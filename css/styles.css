@@ -56,6 +56,10 @@ button {
         position: relative;
         margin: 1rem;
       }
+
+.rounded {
+        border-radius: 100%;
+}
       
 .button:hover{
         box-shadow: 0px 8px var(--medium);
@@ -76,6 +80,7 @@ button {
       }
       
 .button.pressed {
+        cursor:default;
         transform: translateY(16px);
               box-shadow: 0px 0px var(--medium);
         transition: 300ms;

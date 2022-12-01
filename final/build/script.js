@@ -1,24 +1,42 @@
 const options = document.querySelectorAll('.sticky');
-const page = document.querySelector('body');
+const next = document.getElementById('next');
 const pink = document.querySelector('.pickPink');
 const gold = document.querySelector('.pickGold');
 const blue = document.querySelector('.pickBlue');
 var color = 'pink';
+var current = document.getElementById("pink");
 
 options.forEach(button => {
   button.addEventListener('click', () => {
-    options.forEach(button => button.classList.remove('pressed'));
-    button.classList.add('pressed');
     color = button.id;
     choose(color);
     });
 });
 
-function click() {
+next.addEventListener('click', () => {
+    switch (color) {
+        case 'pink':
+            color = 'gold';
+            break;
+        case 'gold':
+            color = 'blue';
+            break;
+        case 'blue':
+            color = 'pink';
+            break;
+        default:
+            color = 'pink';  
+    }
+    choose(color);
     
-}
+    });
+
+
 
 function choose(color) {
+    options.forEach(button => button.classList.remove('pressed'));
+    current = document.getElementById(color);
+    current.classList.add('pressed');
     document.body.classList.remove('pink','gold', 'blue');
     document.body.classList.add(color);
 }
